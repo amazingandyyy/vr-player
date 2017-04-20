@@ -9,11 +9,13 @@ $ npm start
 ```
 open browser in `http://localhost:8081/vr/`
 
-## Screenshots
-![1](https://i.imgur.com/9mCHXTJ.png)
+## Demo
+![4](https://media.giphy.com/media/3oKIPskO92TcrLsnyU/giphy.gif)
+
+
+### Screenshots
 ![2](https://i.imgur.com/IktK6oC.png)
 ![3](https://i.imgur.com/RwHXyje.jpg)
-![4](https://i.imgur.com/Y5X3pPa.png)
 
 
 ### License
