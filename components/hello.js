@@ -174,7 +174,11 @@ class Hello extends Component {
              playerState={this.state.playerState}
              />
             </View>
-            <View>
+            <View
+            style={{
+                width: 'auto',
+            }}
+            >
                 <VideoControl
                     style={{
                         width: 'auto',

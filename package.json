@@ -1,6 +1,6 @@
 {
-  "name": "WelcomeToVR",
-  "version": "0.0.1",
+  "name": "VRPlayer",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "start": "node -e \"console.log('open browser at http:/localhost:8081/vr/\\n\\n');\" && node node_modules/react-native/local-cli/cli.js start",
@@ -8,6 +8,7 @@
     "open": "node -e \"require('xopen')('http://localhost:8081/vr/')\"",
     "test": "jest"
   },
+  "author": "amazingandyyy",
   "dependencies": {
     "ovrui": "~1.0.0",
     "react": "~15.4.1",
