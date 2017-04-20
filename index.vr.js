@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {
   AppRegistry,
   asset,
@@ -6,41 +6,54 @@ import {
   Pano,
   Text,
   View,
+  Video,
+  MediaPlayerState,
+  VideoControl
 } from 'react-vr';
 
-export default class WelcomeToVR extends React.Component {
+export default class WelcomeToVR extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      playerState: new MediaPlayerState({
+        loop:true,
+        autoPlay: true
+      }),
+      videoStyles: {
+        width: 0.1, height:0.066,
+        transform: [{translate: [-5.0, 3.0, -4]}]
+      },
+      count: 44
+    }
+  }
+  componentDidMount(){
+    var self = this;
+    setInterval(()=>{
+      console.log('hey')
+      if(this.state.count > 0){
+        self.setState({
+          videoStyles: {
+            width: this.state.videoStyles.width* 1.1, height:this.state.videoStyles.height* 1.1,
+          },
+          count: this.state.count -1
+        })
+      }
+    }
+    , 50)
+    
+  }
   render() {
     return (
       <View>
-        <Pano source={asset('chess-world.jpg')}/>
-        <Text
-          style={{
-            backgroundColor: 'red',
-            fontSize: 0.8,
-            fontWeight: '400',
-            layoutOrigin: [0.5, 0.5],
-            paddingLeft: 0.2,
-            paddingRight: 0.2,
-            textAlign: 'center',
-            textAlignVertical: 'center',
-            transform: [{translate: [0, 0, -4]}],
-          }}>
-          ReactVR
-        </Text>
-        <Text
-          style={{
-            backgroundColor: 'red',
-            fontSize: 0.8,
-            fontWeight: '400',
-            layoutOrigin: [0, 0],
-            paddingLeft: 0.2,
-            paddingRight: 0.2,
-            textAlign: 'center',
-            textAlignVertical: 'center',
-            transform: [{translate: [5, 0, -5]}],
-          }}>
-          HELLLLOO
-        </Text>
+      <Text
+        style={{
+          transform: [{translate: [-3.0, 2.0, -4]}]
+        }}
+      >after {this.state.count} seconds...</Text>
+      <Pano source={asset('chess-world.jpg')}/>
+      <Video style={this.state.videoStyles}
+        playerState={this.state.playerState}
+        source={asset('andy.m4v')} />
       </View>
     );
   }
