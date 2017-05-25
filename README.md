@@ -1,4 +1,4 @@
-# ReactVR
+# VRPlay(built in ReactVR)
 A simple demo video player built in ReactVR 1.0
 
 ## Intallation
