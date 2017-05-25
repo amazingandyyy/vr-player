@@ -1,5 +1,5 @@
 # ReactVR
-A simple video player built with ReactVR 1.0
+A simple demo video player built in ReactVR 1.0
 
 ## Intallation
 ```command
@@ -22,4 +22,13 @@ open browser in `http://localhost:8081/vr/`
 [MIT](https://github.com/amazingandyyy/VRPlayer/blob/master/LICENSE)
 
 ### Supports
-please star it and fork it
+- please star it or fork it
+
+### Contribution
+please feel free to send a PR
+
+### To-do
+- [ ] add a input section
+- [ ] connect to youtube API
+- [ ] probably built a fb login or fb-sharing button
+- [ ] ... more
