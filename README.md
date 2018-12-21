@@ -3,7 +3,7 @@ A simple demo video player built in ReactVR 1.0
 
 ## Intallation
 ```command
-$ git clone git@github.com:amazingandyyy/VRPlayer.git
+$ git clone git@github.com:amazingandyyy/react-vr.git
 $ yarn
 $ npm start
 ```
