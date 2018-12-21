@@ -1,5 +1,5 @@
-# VRPlay(built in ReactVR)
-A simple demo video player built in ReactVR 1.0
+# React VR App (built in ReactVR)
+A simple demo video player built in ReactVR 1.0 (now React 360)
 
 ## Intallation
 ```command
@@ -19,7 +19,7 @@ open browser in `http://localhost:8081/vr/`
 
 
 ### License
-[MIT](https://github.com/amazingandyyy/VRPlayer/blob/master/LICENSE)
+[MIT](https://github.com/amazingandyyy/react-vr/blob/master/LICENSE)
 
 ### Supports
 - please star it or fork it
